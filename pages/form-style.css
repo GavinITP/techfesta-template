@@ -1,0 +1,69 @@
+@import url("../style.css");
+
+/* global */
+
+.bg-black-dim-orange {
+  background: radial-gradient(circle at center, rgb(63, 26, 0), black);
+  min-height: 100vh;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: min-content;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+label {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* form */
+.form {
+  margin: 3rem auto;
+  padding: 3.5rem 3rem;
+  width: max(35%, 300px);
+  background-color: #eee;
+  border-radius: 1rem;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.form-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-button {
+  padding: 1rem 2rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.checkbox-label {
+  margin: 0 0.5rem;
+}
