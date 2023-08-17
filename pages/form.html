@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/assets/logo_black.png" />
     <link rel="stylesheet" href="form-style.css" />
+    <script src="register.js" defer></script>
     <title>TechFesta | Register</title>
   </head>
+
   <body class="bg-black-dim-orange">
-    <!-- navbar -->
     <!-- navbar -->
     <nav class="nav">
       <div class="page-container nav-container">
@@ -37,34 +38,39 @@
     </nav>
 
     <!-- form  -->
-    <form class="form">
+    <form class="form" id="registerForm">
       <h1 class="form-heading">Register Form</h1>
 
-      <label for="">Company Name</label>
-      <input type="text" />
+      <label for="companyName">Company Name</label>
+      <input type="text" id="companyName" name="companyName" required />
 
-      <label for="">Booth Size</label>
-      <select name="" id="">
-        <option value="">10 x 10 ft.</option>
-        <option value="">10 x 15 ft.</option>
+      <label for="boothSize">Booth Size</label>
+      <select name="boothSize" id="boothSize" name="boothSize" required>
+        <option value="">-- select booth size --</option>
+        <option value="10x10">10 x 10 ft.</option>
+        <option value="10x15">10 x 15 ft.</option>
       </select>
 
-      <label for="">Number of chairs</label>
-      <input type="number" />
+      <label for="numberOfChairs">Number of chairs</label>
+      <input type="number" id="numberOfChairs" name="numberOfChairs" />
 
-      <label for="">Contact Name</label>
-      <input type="text" />
+      <label for="contactName">Contact Name</label>
+      <input type="text" id="contactName" name="contactName" required />
 
-      <label for="">Tel.</label>
-      <input type="tel" />
+      <label for="contactTel">Tel.</label>
+      <input type="tel" id="contactTel" name="contactTel" required />
 
       <div class="checkbox-container">
-        <input type="checkbox" />
-        <label class="checkbox-label" for="">I need booth table</label>
+        <input type="checkbox" id="needBoothTable" name="needBoothTable" />
+        <label class="checkbox-label" for="needBoothTable"
+          >I need booth table</label
+        >
       </div>
 
       <div class="form-button-container">
-        <button class="button form-button" type="submit">Submit</button>
+        <button class="button form-button" type="submit" id="submitButton">
+          Submit
+        </button>
       </div>
     </form>
   </body>
